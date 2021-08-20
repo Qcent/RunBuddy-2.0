@@ -3,19 +3,19 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 body {
-  /* more on this crazy alphanumerical value in a minute! */
   color: #39a6b2;
   font-family: Helvetica, Arial, sans-serif;
 }
-
 /* apply styles to <header> */
 header {
+  z-index: 1;
+  position:absolute;
+  top: 0;
+  right: 0;
+  width:100%;
   padding: 20px 35px;
-  background-color: #39a6b2;
 }
-
 header h1 {
   font-weight: bold;
   font-size: 36px;
@@ -42,28 +42,83 @@ header nav ul li a {
   font-weight: lighter;
   font-size: 22px;
 }
-
-footer {
-  background: #fce138;
-  width: 100%;
-  padding: 40px 35px;
+header, .hero-text h1{
+  text-shadow: 0px 2px 5px #454545;
 }
-
-footer h2 {
-  display: inline;
-  color: #024e76;
-  font-size: 30px;
-  margin: 0;
+.hero {
+  background-image: url("../images/hero-bg.jpeg");
+  overflow: hidden;
+  min-width: 1212px;
+  height:700px;
+  background-size: cover;
+  background-position:center;
+  position:relative;
 }
-
-footer div {
-  float: right;
-  line-height: 1.5;
+.hero-text, .hero-form{
+  display: inline-block;
+}
+.hero-text{
+  width:50%;
+  margin: 100px 0 0 100px;
+  padding-right: 100px;
   text-align: right;
+  vertical-align: top;
+  color: #fff;
+}
+.hero-text h1{
+  color: #fce138;
+  font-size: 48px;
+  font-style: italic;
+}
+.form-input, .hero-form button{
+  border-radius: 8px;
+}
+.hero-form{
+  opacity: .75;
+  color: #024e76;
+  background-color: #fce138;
+  border-radius: 15px;
+  margin-top: 100px;
+  padding:20px;
+  width: 500px;
+  border: solid 2px #024e76;
 }
 
-footer a {
+.form-input{
+  display:block;
+  border: 1px solid #024e76;
+  padding: 7px 15px;
+  font-size: 16px;
   color: #024e76;
+  width: 100%;
+  margin-bottom: 15px;
+}
+.hero-form h3{
+  font-size: 24px;
+  margin:0px;
+}
+.hero-form p {
+  margin: 5px 0 15px 0;
+}
+.hero-form label{
+  margin: 0 5px;
+}
+.hero-form button{
+  opacity: 1;
+  background-color: #024e76;
+  color: #fce138;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+#age-confirm, #trainer-yes, #trainer-no{
+  width: 20px;
+  height: 20px;
+  position: relative;
+  top: 4px;
+}
+#trainer-yes, #trainer-no{
+  left: 3px;
 }
 
 section {
@@ -82,55 +137,6 @@ section {
 }
 .secondary-border{
   border-color: #39a6b2;
-}
-
-/* Hero Style Start */
-.hero {
-  background-image: url("../images/hero-bg.jpeg");
-  height:600px;
-  background-size: cover;
-  background-position:center;
-  position:relative;
-}
-/* Hero Style End */
-
-.hero-form{
-  color: #024e76;
-  background-color: #fce138;
-  padding:20px;
-  width: 500px;
-  border: solid 3px #024e76;
-  position: absolute;
-  bottom: 120px;
-  right: 140px;
-}
-
-.form-input{
-  display:block;
-  border: 1px solid #024e76;
-  padding: 7px 15px;
-  font-size: 16px;
-  color: #024e76;
-  width: 100%;
-  margin-bottom: 15px;
-}
-
-.hero-form h3{
-  font-size: 24px;
-  margin:0px;
-}
-.hero-form p {
-  margin: 5px 0 15px 0;
-}
-.hero-form label{
-  margin: 0 5px;
-}
-.hero-form button{
-  background-color: #024e76;
-  color: #fce138;
-  border: none;
-  padding: 10px 20px;
-  font-size: 16px;
 }
 .intro{
   text-align: center;
@@ -240,4 +246,26 @@ section {
   line-height: 1.5;
   font-size: 20px;
   font-style: normal;
+}
+footer {
+  background: #fce138;
+  width: 100%;
+  padding: 40px 35px;
+}
+
+footer h2 {
+  display: inline;
+  color: #024e76;
+  font-size: 30px;
+  margin: 0;
+}
+
+footer div {
+  float: right;
+  line-height: 1.5;
+  text-align: right;
+}
+
+footer a {
+  color: #024e76;
 }
