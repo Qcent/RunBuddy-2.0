@@ -9,19 +9,22 @@ body {
 }
 /* apply styles to <header> */
 header {
-  z-index: 1;
-  position:absolute;
-  top: 0;
-  right: 0;
+  display:flex;
+  justify-content: space-between;
+  flex-wrap: ;
   width:100%;
   padding: 20px 35px;
+  position:absolute;
+  top:0;
+  left:0;
+  z-index: 2;
 }
 header h1 {
   font-weight: bold;
   font-size: 36px;
   color: #fce138;
   margin: 0;
-  display: inline;
+
 }
 header a {
   text-decoration: none;
@@ -29,8 +32,13 @@ header a {
 }
 
 header nav {
-  float: right;
+
   margin: 7px 0;
+}
+header ul{
+  display:flex;
+  justify-content: flex-end;
+  flex-wrap: wrap-reverse;
 }
 
 header nav ul li {
@@ -52,7 +60,6 @@ header, .hero-text h1{
   height:700px;
   background-size: cover;
   background-position:center;
-  position:relative;
 }
 .hero-text, .hero-form{
   display: inline-block;
