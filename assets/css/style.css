@@ -35,20 +35,18 @@ header nav {
 
   margin: 7px 0;
 }
-header ul{
+header nav ul{
   display:flex;
-  justify-content: flex-end;
-  flex-wrap: wrap-reverse;
-}
-
-header nav ul li {
-  display: inline;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
 }
 
 header nav ul li a {
   margin: 0 30px;
   font-weight: lighter;
-  font-size: 22px;
+  font-size: 1.55vw;
 }
 header, .hero-text h1{
   text-shadow: 0px 2px 5px #454545;
