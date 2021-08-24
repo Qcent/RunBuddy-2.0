@@ -48,7 +48,7 @@ header nav ul li a {
   font-weight: lighter;
   font-size: 1.55vw;
 }
-header, .hero-text h1{
+header, .hero-cta h2{
   text-shadow: 0px 2px 5px #454545;
 }
 .hero {
